@@ -3,7 +3,7 @@ html{
 }
 body{
   color: black;
-  background-color: rgb(250, 249, 244);
+  background-color: #faf9f4;
   font-size: 18px;
   font-family: Helvetica;
 }
@@ -20,11 +20,15 @@ h2{
   color: black;
   padding: 20px;
 }
+.stylist>h2{
+  text-transform: capitalize;
+  color: #355e53;
+}
 h3{
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   color: black;
 }
 p{
@@ -34,76 +38,82 @@ p{
   margin-left: 10px;
   margin-right: 10px;
 }
+header{
+  background-attachment: fixed;
+  background-image: url("../images/pastel-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .form{
-  padding-left: 40px;
-  padding-right: 40px;
+  text-align: center;
+  padding: 40px;
+  background: white;
 }
 .form img{
-  width: 300px;
+  width: 275px;
+}
+.form-group{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
 }
 a{
-    color: #ffcb05;
-    text-decoration: none;
-  }
-  .skip a{
-    background: rgba(255, 255, 255, .8);
-    color: black;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
-  .skip a:focus{
+  color: #ffcb05;
+  text-decoration: none;
+}
+.skip a{
+  background: rgba(255, 255, 255, .8);
+  color: black;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+.skip a:focus{
     top: 0px;
-  }
-  :focus{
-    outline: 2px solid black;
-  }
-  .nav{
-    display: block;
-    justify-content:center;
-    padding: 10px;
-    text-align: center;
-  }
-  .nav ul{
-    font-size: 24px;
-  }
-  .nav a{
-    display: block;
-    color: #ffcb05;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px;
-  }
-  .nav a:hover{
-    text-decoration: underline;
-  }
-  a.current{
-    background: white;
-    color: #ffcb05;
-  }
-  a:hover{
-    text-decoration: underline;
-  }
+}
+:focus{
+  outline: 2px solid black;
+}
+.nav{
+  display: block;
+  justify-content:center;
+  padding: 10px;
+  text-align: center;
+}
+.nav ul{
+  font-size: 24px;
+}
+.nav a{
+  display: block;
+  color: #ffcb05;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+}
+.nav a:hover{
+  text-decoration: underline;
+}
+a.current{
+  background: white;
+  color: #ffcb05;
+}
+a:hover{
+  text-decoration: underline;
+}
 .index-container{
   display: grid;
   align-items: center;
   grid-gap: 10px;
   padding-bottom: 50px;
 }
-
-}
-.form{
-  background: white;
-padding-left: 300px;
-}
-
 .profile-image{
-  padding-left: 75px;
-  padding-right: 75px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   max-height: 200px;
